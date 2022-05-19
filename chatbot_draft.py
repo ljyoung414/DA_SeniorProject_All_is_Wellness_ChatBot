@@ -33,8 +33,8 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-st.header('All is Wellness 상담 챗봇')
-st.markdown("Chatbot test")
+st.header('💗All is Wellness💙')
+st.markdown("당신을 위한 심리상담 챗봇입니다")
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = [] #챗봇 대화내용저장(generated 세션)
@@ -46,7 +46,7 @@ if 'past' not in st.session_state:
 
 # 사용자의 input
 with st.form('form', clear_on_submit=True): #submit 버튼 누를시 입력칸 초기화
-    user_input = st.text_area('대화를 입력해주세요: ','',placeholder='시작하고 싶으시면 시작하기를, 끝내고 싶으면 그만하기를 입력해주세요')
+    user_input = st.text_area('','',placeholder='대화를 입력해주세요.')
     submitted = st.form_submit_button(label='보내기')
 
 # 유저가 인풋 주고 전송버튼을 누른다면
