@@ -34,7 +34,7 @@ model = cached_model()
 df = get_dataset()
 
 st.header('💗All is Wellness💙')
-st.markdown("당신을 위한 심리상담 챗봇입니다")
+st.markdown("당신만을 위한 심리상담 챗봇입니다")
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = [] #챗봇 대화내용저장(generated 세션)
